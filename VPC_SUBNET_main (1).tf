@@ -1,5 +1,5 @@
 
-provider "aws"{
+provider "azure"{
     region = var.region
     access_key =var.access_key
     secret_key =var.secret_key
@@ -133,4 +133,5 @@ resource "aws_eip" "Motivalogic_IP" {
 output "WP_Server_01_Public_IPaddress" {
   value       = aws_eip.Motivalogic_IP
   description = "The Public IP address of the website is : "
+
 }
